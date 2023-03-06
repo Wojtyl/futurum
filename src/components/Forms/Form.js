@@ -126,7 +126,7 @@ const FormCampaign = (props) => {
             // nav(0);
           });
       } else if (props.type === "Update") {
-        if (currBalance < prevBalance - fund) {
+        if (currBalance < fund - prevBalance) {
           throw new Error(
             "Not enough funds on your account. Deposit money and try again!"
           );
