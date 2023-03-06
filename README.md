@@ -2,6 +2,9 @@
 
 React App to perform CRUD operations and managins campaigns
 
+# Live Preview
+https://strong-sable-f36c0d.netlify.app/
+
 ## Content
 
 Implemented creating, editing and deleting existing campaigns.
