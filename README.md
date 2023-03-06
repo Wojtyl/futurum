@@ -8,7 +8,7 @@ https://strong-sable-f36c0d.netlify.app/
 ## Content
 
 Implemented creating, editing and deleting existing campaigns.
-As dabatase I used mockapi.io.
+As database I used mockapi.io.
 
 Creating campaign we have to provide campaign name, campaign keywords are created automatically based on typed name. Towns where campaign will be based are able to select from list. As funds I understad how much we have to pay for the campaign, and system checks if the campaign cost is not bigger than our bank account amount. If we provide number bigger than available amount on bank account, the error modal wil pop up. We also can deposit money to our bank account :)
 
