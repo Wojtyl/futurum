@@ -35,6 +35,9 @@ const ReadCampaigns = (props) => {
       <p className={classes["section-title"]}>My Campaigns</p>
       <div className={classes["section-container"]}>
         {isLoading && <BiLoader className={classes.loader} />}
+        <Link to="/create">
+          <Button type="button">Add Campaign</Button>
+        </Link>
         {!isLoading && !anyCampaign && (
           <p className={classes["section-description"]}>
             No campaigns found. Create one.
@@ -49,9 +52,6 @@ const ReadCampaigns = (props) => {
               onRemove={removeHandler}
             ></CampaignCard>
           ))}
-        <Link to="/create">
-          <Button type="button">Add Campaign</Button>
-        </Link>
       </div>
     </React.Fragment>
   );
