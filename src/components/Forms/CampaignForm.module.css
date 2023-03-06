@@ -1,0 +1,125 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  /* max-width: 40rem; */
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  -webkit-box-shadow: 0px 13px 18px -17px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 13px 18px -17px rgba(66, 68, 90, 1);
+  box-shadow: 0px 13px 18px -17px rgba(66, 68, 90, 1);
+  margin-bottom: 5rem;
+}
+
+.form input {
+  margin-bottom: 2.5rem;
+}
+
+.form button {
+  align-self: center;
+  margin: 1rem 0;
+}
+
+.form input[type="checkbox"] {
+  align-self: flex-start !important;
+  /* justify-self: flex-start !important; */
+}
+
+.form input[type="text"],
+.form input[type="list"],
+.form input[type="number"] {
+  height: 4rem;
+  padding: 1rem;
+  border: 1px solid #ced6e0;
+  border-radius: 5px;
+  width: 30rem;
+}
+.form input[type="text"]:focus,
+.form input[type="list"]:focus,
+.form input[type="number"]:focus {
+  outline: none !important;
+  border: 2px solid #3d9cff;
+  -webkit-box-shadow: 0px 8px 13px -14px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 13px -14px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 13px -14px rgba(66, 68, 90, 1);
+}
+
+.form label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 3rem !important;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  border-radius: 34px;
+
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  border-radius: 50%;
+
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #3d9cff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #3d9cff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

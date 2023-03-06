@@ -1,0 +1,10 @@
+.button {
+  border: none;
+  /* background-color: aqua; */
+  font-size: 1.6rem;
+  border-radius: 20px;
+  height: 5rem;
+  width: 25rem;
+  cursor: pointer;
+  margin: 2rem 0;
+}

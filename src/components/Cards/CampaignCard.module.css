@@ -1,0 +1,86 @@
+.campaign-card {
+  display: flex;
+  /* max-width: 80%; */
+  flex-direction: column;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: 2rem;
+  gap: 2rem;
+  -webkit-box-shadow: 0px 8px 13px -9px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 8px 13px -9px rgba(66, 68, 90, 1);
+  box-shadow: 0px 8px 13px -9px rgba(66, 68, 90, 1);
+}
+
+.card-header {
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #333;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-information {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.icon {
+  font-size: 2.6rem;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.icon:visited,
+.icon:active {
+  color: #333;
+}
+
+.icon:hover {
+  transform: translateY(-0.6rem);
+  transition: all 0.2s ease-in-out;
+}
+
+.campaign-card_h1 {
+  font-weight: 600;
+}
+
+.campaign-card_desc {
+  font-size: 1rem;
+}
+
+.manage-buttons {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2rem;
+}
+
+.active-card {
+  background-color: #8cf07f;
+}
+
+.inactive-card {
+  background-color: #f57777;
+}
+
+.load {
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    tranform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    tranform: rotate(360deg);
+  }
+}

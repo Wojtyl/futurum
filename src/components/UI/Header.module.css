@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #534d56;
+  height: 8rem;
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #f1edee;
+}
+
+.title {
+  flex: 2;
+  display: flex;
+  cursor: pointer;
+}
+
+.balance {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.balance-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.title p {
+  font-size: 3rem;
+}
+
+.balance-content p {
+  font-size: 2rem;
+}
+
+.balance-text {
+  font-size: 2.4rem !important;
+  font-weight: 700;
+}
+
+.add-balance {
+  font-size: 3rem;
+}
