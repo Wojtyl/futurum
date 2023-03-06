@@ -1,28 +1,26 @@
 .header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #534d56;
-  height: 8rem;
+  min-height: 8rem;
   padding: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #f1edee;
+  gap: 10rem;
 }
 
 .title {
-  flex: 2;
   display: flex;
   cursor: pointer;
 }
 
 .balance {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
-  cursor: pointer;
 }
 
 .balance-content {
@@ -47,4 +45,5 @@
 
 .add-balance {
   font-size: 3rem;
+  cursor: pointer;
 }

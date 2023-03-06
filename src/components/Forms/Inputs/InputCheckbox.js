@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "../CampaignForm.module.css";
+import classes from "../Form.module.css";
 
 const InputCheckbox = (props) => {
   return (
@@ -17,7 +17,7 @@ const InputCheckbox = (props) => {
           onChange={props.onChange}
           defaultChecked={props.status}
         />
-        <span class={classes.slider}></span>
+        <span className={classes.slider}></span>
       </label>
     </React.Fragment>
   );

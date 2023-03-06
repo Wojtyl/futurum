@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BiLoader } from "react-icons/bi";
 import Button from "../Buttons/Button";
 import CampaignCard from "../Cards/CampaignCard";
@@ -31,23 +31,29 @@ const ReadCampaigns = (props) => {
   const anyCampaign = fetchedCampaigns.length !== 0;
 
   return (
-    <div className={classes["section-container"]}>
-      <p className="section-title">My Campaigns</p>
-      {isLoading && <BiLoader className={classes.loader} />}
-      {!isLoading && !anyCampaign && <p>No campaigns found. Create one.</p>}
-      {!isLoading &&
-        anyCampaign &&
-        fetchedCampaigns.map((campaign) => (
-          <CampaignCard
-            key={campaign.id}
-            data={campaign}
-            onRemove={removeHandler}
-          ></CampaignCard>
-        ))}
-      <Link to="/create">
-        <Button type="button">Add Campaign</Button>
-      </Link>
-    </div>
+    <React.Fragment>
+      <p className={classes["section-title"]}>My Campaigns</p>
+      <div className={classes["section-container"]}>
+        {isLoading && <BiLoader className={classes.loader} />}
+        {!isLoading && !anyCampaign && (
+          <p className={classes["section-description"]}>
+            No campaigns found. Create one.
+          </p>
+        )}
+        {!isLoading &&
+          anyCampaign &&
+          fetchedCampaigns.map((campaign) => (
+            <CampaignCard
+              key={campaign.id}
+              data={campaign}
+              onRemove={removeHandler}
+            ></CampaignCard>
+          ))}
+        <Link to="/create">
+          <Button type="button">Add Campaign</Button>
+        </Link>
+      </div>
+    </React.Fragment>
   );
 };
 

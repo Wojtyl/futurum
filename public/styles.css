@@ -11,3 +11,15 @@ html {
   overflow-x: hidden;
   /* background-color: #b8e6ef; */
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 45%;
+  }
+}
